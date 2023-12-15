@@ -1,1 +1,53 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [team]
+      ,[player]
+      ,[bat_or_bowl]
+      ,[bb_bf]
+      ,[runs]
+      ,[wkts]
+      ,[wicketball_prob]
+      ,[runs_per_ball]
+      ,[opposition]
+      ,[ground]
+      ,[start_date]
+      ,[overs]
+      ,[mdns]
+      ,[econ]
+      ,[inns]
+      ,[4s]
+      ,[6s]
+      ,[sr]
+      ,[not_out]
+      ,[mins]
+  FROM [sql].[dbo].[CWC23_all_innings$]
 
+--changing the player column value from V Kohli(Ind) to V Kohli
+update [sql].[dbo].[CWC23_all_innings$]
+set player=TRIM(SUBSTRING(player, 1, CHARINDEX('(', player) - 1))
+WHERE CHARINDEX('(', player) > 0;
+
+  --player with most runs
+  select top 10 player,team,sum(runs) as total_runs 
+  FROM [sql].[dbo].[CWC23_all_innings$]
+  group by player,team
+  order by sum(runs) DESC
+
+  --player with most wickets
+  select top 10 player,team,sum(wkts) as total_wickets
+  FROM [sql].[dbo].[CWC23_all_innings$]
+  group by player,team
+  order by sum(wkts) DESC
+
+  --player with most 6s
+  select top 10 player,team,sum(6s) as total_sixes
+  FROM [sql].[dbo].[CWC23_all_innings$]
+  group by player,team
+  order by sum(6s) DESC
+
+  --player with 4s
+  select top 10 player,team,sum(4s) as total_fours
+  FROM [sql].[dbo].[CWC23_all_innings$]
+  group by player,team
+  order by sum(4s) DESC
+
+  
