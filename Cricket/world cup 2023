@@ -127,3 +127,11 @@ select team,sum(wkts) as total_wkts
 from [sql].[dbo].[CWC23_all_innings$]
 group by team
 order by sum(wkts) DESC
+
+--best economy
+--best economy
+select team,player,econ,opposition as economy
+from [sql].[dbo].[CWC23_all_innings$]
+group by team,player,econ,opposition
+having econ is not NULL
+order by econ ASC
