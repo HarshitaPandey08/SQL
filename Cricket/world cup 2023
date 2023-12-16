@@ -97,4 +97,21 @@ alter column sr float
   group by player,team
   order by sum([4s]) DESC
 
+--best strike rate
+select top 10 player,team,sr,opposition as strike_rate
+from [sql].[dbo].[CWC23_all_innings$]
+group by player,team,sr,opposition
+order by sr DESC
   
+
+--ground with most and least runs
+select ground,sum(runs) as total_runs
+from [sql].[dbo].[CWC23_all_innings$]
+group by ground 
+order by sum(runs)
+
+--ground with most and least wickets
+select ground,sum(wkts) as total_wickets
+from [sql].[dbo].[CWC23_all_innings$]
+group by ground
+order by sum(wkts)
