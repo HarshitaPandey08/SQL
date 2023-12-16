@@ -77,6 +77,24 @@ WHERE
 
 --changing datatype of the above columns from nvarchar to float
 alter table [sql].[dbo].[CWC23_all_innings$]
-alter column 4s float
+alter column [4s] float
+
+alter table [sql].[dbo].[CWC23_all_innings$]
+alter column [6s] float
+
+alter table [sql].[dbo].[CWC23_all_innings$]
+alter column sr float
+
+--player with most 6s
+  select top 10 player,team,sum([6s]) as total_sixes
+  FROM [sql].[dbo].[CWC23_all_innings$]
+  group by player,team
+  order by sum([6s]) DESC
+
+  --player with 4s
+  select top 10 player,team,sum([4s]) as total_fours
+  FROM [sql].[dbo].[CWC23_all_innings$]
+  group by player,team
+  order by sum([4s]) DESC
 
   
