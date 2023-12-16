@@ -50,4 +50,33 @@ WHERE CHARINDEX('(', player) > 0;
   group by player,team
   order by sum(4s) DESC
 
+ --player with most 6s
+  select top 10 player,team,sum(6s) as total_sixes
+  FROM [sql].[dbo].[CWC23_all_innings$]
+  group by player,team
+  order by sum(6s) DESC
+
+  --player with 4s
+  select top 10 player,team,sum(4s) as total_fours
+  FROM [sql].[dbo].[CWC23_all_innings$]
+  group by player,team
+  order by sum(4s) DESC
+
+ 
+--lists the datatype of all the columns along with thier name
+SELECT 
+    COLUMN_NAME,
+    DATA_TYPE
+FROM 
+    INFORMATION_SCHEMA.COLUMNS
+WHERE 
+    TABLE_SCHEMA = 'dbo'
+    AND TABLE_NAME = 'CWC23_all_innings$';
+
+--the datatype of column 4s,sr and 6s is nvarchar therefore operations like sum() will give error.
+
+--changing datatype of the above columns from nvarchar to float
+alter table [sql].[dbo].[CWC23_all_innings$]
+alter column 4s float
+
   
