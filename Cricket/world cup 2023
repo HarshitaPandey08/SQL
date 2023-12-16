@@ -115,3 +115,15 @@ select ground,sum(wkts) as total_wickets
 from [sql].[dbo].[CWC23_all_innings$]
 group by ground
 order by sum(wkts)
+
+--team with most and least cumulative runs
+select team,sum(runs) as total_runs
+from [sql].[dbo].[CWC23_all_innings$]
+group by team
+order by sum(runs) DESC
+
+--team with most and leat cumulative wkts
+select team,sum(wkts) as total_wkts
+from [sql].[dbo].[CWC23_all_innings$]
+group by team
+order by sum(wkts) DESC
