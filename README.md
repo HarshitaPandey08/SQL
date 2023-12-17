@@ -34,6 +34,10 @@ alter column sr float
 
 # Analysis and Insights
 1.Player with most runs
+![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/99c06e06-33ea-40df-a70e-e7cfa8a964b0)
+
+![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/a6ac4370-366c-4c9a-a2df-e9158c6dd7d9)
+
 2.player with most wickets
 3.player with most 6s
 4.player with 4s
