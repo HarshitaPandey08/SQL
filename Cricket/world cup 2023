@@ -108,7 +108,7 @@ group by team
 order by sum(wkts) DESC
 
 --best economy
-select team,player,econ,opposition as economy
+select team,player,econ,sum(runs) as total_runs,sum(overs) as total_overs, opposition as economy
 from [sql].[dbo].[CWC23_all_innings$]
 group by team,player,econ,opposition
 having econ is not NULL
