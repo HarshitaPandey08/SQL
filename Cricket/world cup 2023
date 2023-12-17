@@ -129,7 +129,7 @@ group by team
 order by sum(wkts) DESC
 
 --best economy
---best economy
+
 select team,player,econ,opposition as economy
 from [sql].[dbo].[CWC23_all_innings$]
 group by team,player,econ,opposition
