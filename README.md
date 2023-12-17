@@ -15,11 +15,13 @@ Issued found
 
 # Data Cleaning
 1. The code below would solve the player column issue as mentioned in the data exploration section
+
 update [sql].[dbo].[CWC23_all_innings$]
 set player=TRIM(SUBSTRING(player, 1, CHARINDEX('(', player) - 1))
 WHERE CHARINDEX('(', player) > 0;
 
 2. The below code will change the datatype of columns 4s,6s and sr to float from nvarchar.
+
 
 alter table [sql].[dbo].[CWC23_all_innings$]
 alter column [4s] float
