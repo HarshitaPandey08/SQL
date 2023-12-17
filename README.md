@@ -33,4 +33,15 @@ alter table [sql].[dbo].[CWC23_all_innings$]
 alter column sr float
 
 # Analysis and Insights
-1.
+1.Player with most runs
+2.player with most wickets
+3.player with most 6s
+4.player with 4s
+5.best strike rate
+6.ground with most and least runs
+7.ground with most and least wickets
+8.team with most and least cumulative runs
+9.team with most and leat cumulative wkts
+10.player with best economy
+
+
