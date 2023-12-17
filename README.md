@@ -74,17 +74,33 @@ alter column sr float
 ![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/af1fe8ce-7ef9-471e-8d2b-4f9502826c10)
 
 
-## 7.ground with most and least wickets
+## 7.team with most and least cumulative runs
 
 ![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/7bfa939b-0c33-4e2b-9781-97e13f568e40)
 
 ![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/453f9e0b-7680-482d-8288-f385bbfa2e49)
 
 
-## 8.team with most and least cumulative runs
+## 8.ground with most and least wickets 
+
+![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/c09c4f3e-9086-4b04-810a-72e615a5e7cb)
+
+![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/6b3f75de-f797-4638-8599-24f0a07a7bd2)
 
 
 ## 9.team with most and leat cumulative wkts
+
+![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/350d37e7-351f-4e09-989e-d416e94022be)
+
+![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/54acf31c-e083-435b-8bad-caa5f023b006)
+
+
 ## 10.player with best economy
+
+![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/0da41561-cf89-45ff-9ab2-4cd1b44d992b)
+
+![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/0a2b0a4f-9782-4ec2-bd57-b0db953f1a06)
+
+
 
 
