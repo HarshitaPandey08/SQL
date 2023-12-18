@@ -113,3 +113,4 @@ from [sql].[dbo].[CWC23_all_innings$]
 group by team,player,econ,opposition
 having econ is not NULL
 order by econ ASC
+
