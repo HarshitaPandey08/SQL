@@ -1,5 +1,8 @@
 # ICC Cricket World Cup 2023 Data Analysis using SQL
 
+![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/9927af98-a6d7-45d6-8238-c04785560b56)
+
+dataset source:
 https://www.kaggle.com/datasets/jdaustralia/icc-cwc23-all-innings-cleaned/versions/11?resource=download
 
 # The Analysis includes
