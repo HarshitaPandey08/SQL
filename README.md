@@ -1,4 +1,5 @@
 # ICC Cricket World Cup 2023 Data Analysis using SQL
+Performing data analysis on ICC Cricket World Cup 2023 using SQL for insights
 
 ![image](https://github.com/HarshitaPandey08/SQL/assets/53274845/9927af98-a6d7-45d6-8238-c04785560b56)
 
