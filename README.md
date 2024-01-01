@@ -15,6 +15,7 @@ https://www.kaggle.com/datasets/jdaustralia/icc-cwc23-all-innings-cleaned/versio
 
 Issued found
 1.The player table had values as V Kohli(IND) which was not needed as there is a seperate column for the team.
+
 2. Column 4s,6s,sr(strike rate) had datatype of nvarchar which would make operations such as sum() difficult to perform.
 
 # Data Cleaning
